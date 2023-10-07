@@ -1,0 +1,6 @@
+aiogram
+environs
+asyncpg
+sqlalchemy
+pandas
+openpyxl

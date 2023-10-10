@@ -1083,7 +1083,7 @@ async def jismoniy_madaniyat_attendance(message: types.Message, state: FSMContex
     if nazoratchi == 5419118871:
         tekshirdi += "Shermatov Axlidin"
     elif nazoratchi == 398900136:
-        tekshirdi += "Mamadaliyev Hayrulloh"
+        tekshirdi += "Madaminov Hayrulloh"
     elif nazoratchi == 2051502101:
         tekshirdi += "Baxtiyor Odilov"
     else:

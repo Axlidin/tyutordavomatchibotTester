@@ -665,7 +665,7 @@ from states.show_tyutor import Fizika_check
 async def fizika_menu(message: types.Message):
     tg_id = message.from_user.id
     faculty = message.text.lower()
-    if tg_id == 5419118871:  # or 591486700 or 2051502101):
+    if tg_id == 5419118871: 
         show_tyutor = await db.show_Tyutor(faculty=faculty)
         Mk = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True, row_width=2)
         if show_tyutor:
@@ -675,7 +675,7 @@ async def fizika_menu(message: types.Message):
         Mk.add("🛑 To'xtatish")
         await message.answer(f"Kerakli tyutorni  tanlang! yoki 👇 tugmani bosing", reply_markup=Mk)
         await Fizika_check.next()
-    elif tg_id == 591486700:
+    elif tg_id == 937807887:######937807887 yangisi
         show_tyutor = await db.show_Tyutor(faculty=faculty)
         Mk = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True, row_width=2)
         if show_tyutor:
@@ -758,7 +758,7 @@ async def fizika_attendance(message: types.Message, state: FSMContext):
     tekshirdi = ""
     if nazoratchi == 5419118871:
         tekshirdi += "Shermatov Axlidin"
-    elif nazoratchi == 591486700:
+    elif nazoratchi == 937807887:######937807887 yangisi
         tekshirdi += "Karimberdiyev Ulug'bek"
     elif nazoratchi == 50591600:
         tekshirdi += "Baxtiyor Odilov"
